@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wander & Wild – Travel Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION  →  Flexbox
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">Wander<span>&</span>Wild</a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      <a href="#destinations" class="btn btn--outline">Explore</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION  →  CSS Grid (two-column split)
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Curated adventures since 2018</p>
+      <h1 class="hero__title">Travel far.<br /><em>Live deeper.</em></h1>
+      <p class="hero__subtitle">
+        We craft slow, intentional journeys that connect you with the world's
+        most extraordinary places — off the beaten path and beyond the ordinary.
+      </p>
+      <div class="hero__actions">
+        <a href="#destinations" class="btn btn--primary">See Our Trips</a>
+        <a href="#about" class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__img-card hero__img-card--main">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" alt="Scenic mountain lake" />
+      </div>
+      <div class="hero__img-card hero__img-card--small">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80" alt="Beach sunset" />
+      </div>
+      <div class="hero__badge">
+        <span class="hero__badge-num">200+</span>
+        <span class="hero__badge-txt">Destinations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION  →  CSS Grid (text + stats)
+       ============================================================ -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__text">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Born from a love of<br />uncharted roads</h2>
+        <p>
+          Wander &amp; Wild was founded by three friends who quit their jobs,
+          sold their cars, and spent a year travelling across six continents.
+          What they discovered changed everything — travel, done slowly and
+          intentionally, has the power to transform.
+        </p>
+        <p>
+          Today we help thousands of travellers design experiences that go
+          beyond sightseeing. Fewer crowds, deeper culture, and memories
+          that actually last.
+        </p>
+        <a href="#destinations" class="btn btn--primary">Plan Your Trip</a>
+      </div>
+      <div class="about__stats">
+        <div class="stat-card">
+          <span class="stat-card__num">12k+</span>
+          <span class="stat-card__label">Happy Travellers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">200+</span>
+          <span class="stat-card__label">Destinations</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">6</span>
+          <span class="stat-card__label">Continents</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">98%</span>
+          <span class="stat-card__label">5-Star Reviews</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DESTINATIONS SECTION  →  CSS Grid (auto-fill card grid)
+       ============================================================ -->
+  <section class="destinations" id="destinations">
+    <div class="section-header">
+      <p class="section-label">Where We Go</p>
+      <h2 class="section-title">Top Destinations</h2>
+      <p class="section-subtitle">
+        Hand-picked places where adventure, culture, and beauty collide.
+      </p>
+    </div>
+    <div class="destinations__grid">
+
+      <article class="dest-card dest-card--wide">
+        <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=900&q=80" alt="Kyoto, Japan" />
+        <div class="dest-card__info">
+          <span class="dest-card__tag">Asia</span>
+          <h3>Kyoto, Japan</h3>
+          <p>Ancient temples, bamboo forests, and the stillness of a tea ceremony.</p>
+          <a href="#" class="dest-card__link">Explore →</a>
+        </div>
+      </article>
+
+      <article class="dest-card">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="Amalfi Coast, Italy" />
+        <div class="dest-card__info">
+          <span class="dest-card__tag">Europe</span>
+          <h3>Amalfi Coast</h3>
+          <p>Cliffside villages draped in bougainvillea above the Tyrrhenian Sea.</p>
+          <a href="#" class="dest-card__link">Explore →</a>
+        </div>
+      </article>
+
+      <article class="dest-card">
+        <img src="https://images.unsplash.com/photo-1523592121529-f6dde35f079e?w=600&q=80" alt="Patagonia" />
+        <div class="dest-card__info">
+          <span class="dest-card__tag">South America</span>
+          <h3>Patagonia</h3>
+          <p>Raw wilderness, glacier lakes, and sky-high granite towers.</p>
+          <a href="#" class="dest-card__link">Explore →</a>
+        </div>
+      </article>
+
+      <article class="dest-card">
+        <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=600&q=80" alt="Morocco" />
+        <div class="dest-card__info">
+          <span class="dest-card__tag">Africa</span>
+          <h3>Marrakech</h3>
+          <p>Winding souks, spice markets, and the call to prayer at dusk.</p>
+          <a href="#" class="dest-card__link">Explore →</a>
+        </div>
+      </article>
+
+      <article class="dest-card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="Iceland" />
+        <div class="dest-card__info">
+          <span class="dest-card__tag">Europe</span>
+          <h3>Iceland</h3>
+          <p>Northern lights, geothermal pools, and endless summer daylight.</p>
+          <a href="#" class="dest-card__link">Explore →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES / FEATURES SECTION  →  CSS Grid (3-column)
+       ============================================================ -->
+  <section class="features">
+    <div class="section-header">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Travel, your way</h2>
+    </div>
+    <div class="features__grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">🗺️</div>
+        <h3>Custom Itineraries</h3>
+        <p>Every trip is built around you — your pace, your interests, your budget. No cookie-cutter tours.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🏡</div>
+        <h3>Curated Stays</h3>
+        <p>We hand-pick boutique hotels, eco lodges, and local guesthouses — places with real character.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🧭</div>
+        <h3>Local Experts</h3>
+        <p>Every destination is guided by someone who actually lives there. No tourist scripts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🌿</div>
+        <h3>Sustainable Travel</h3>
+        <p>We partner with eco-conscious operators and offset every trip's carbon footprint.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📞</div>
+        <h3>24/7 Support</h3>
+        <p>Missed a connection? Sudden plan change? A real human is always a phone call away.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">💳</div>
+        <h3>Flexible Booking</h3>
+        <p>Pay in instalments and cancel up to 30 days before departure — no questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION  →  CSS Grid (3-column)
+       ============================================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <p class="section-label">Traveller Stories</p>
+      <h2 class="section-title">Words from the road</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card">
+        <p class="testimonial-card__quote">"The Kyoto trip was everything I dreamed of and more. Every detail was perfect — from the ryokan to the private temple visit at sunrise."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">SR</div>
+          <div>
+            <strong>Sofia R.</strong>
+            <span>Lisbon, Portugal</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-card__quote">"I've travelled with other agencies before but this was something else. They genuinely care about the experience, not just the booking."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">TK</div>
+          <div>
+            <strong>Thomas K.</strong>
+            <span>Toronto, Canada</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-card__quote">"Patagonia with Wander & Wild was the trip of a lifetime. Our guide knew every trail, every hidden viewpoint. Absolutely magical."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">AM</div>
+          <div>
+            <strong>Amara M.</strong>
+            <span>Lagos, Nigeria</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER  →  CSS Grid (4-column) + Flexbox for social row
+       ============================================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">Wander<span>&</span>Wild</a>
+        <p>Slow travel. Deep connections. Real memories.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#">Asia</a></li>
+          <li><a href="#">Europe</a></li>
+          <li><a href="#">South America</a></li>
+          <li><a href="#">Africa</a></li>
+          <li><a href="#">Oceania</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Booking Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Wander & Wild. All rights reserved.</p>
+      <p>Built with HTML &amp; CSS · CSS Grid + Flexbox</p>
+    </div>
+  </footer>
+
+</body>
+</html>
